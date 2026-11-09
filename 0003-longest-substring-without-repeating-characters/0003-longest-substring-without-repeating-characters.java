@@ -10,7 +10,7 @@ class Solution {
                 left++;
             }
             set.add(s.charAt(right));
-            max_sub = Math.max(max_sub,set.size());
+            max_sub = Math.max(max_sub,right-left+1);
     }
     return max_sub;
     }
